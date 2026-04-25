@@ -1,45 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Raleway:wght@300;400;500&display=swap');
 
-@media (max-width: 768px) {
-  #inputsContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  #inputs {
-    align-items: center;
-    width: 90%;
-  }
-
-  #inputs .MuiTextField-root {
-    width: 100%;
-  }
-
-  #menuContainer {
-    width: 90%;
-  }
-
-  #scenario-image {
-    max-width: 200px;
-    max-height: 200px;
-  }
-
-  h1 {
-    font-size: 28px;
-    letter-spacing: 2px;
-  }
-
-  #results-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .results-card {
-    width: 80%;
-  }
-}
-
 :root {
   --bg: #000814;
   --bg-card: #0a1628;
@@ -271,4 +231,44 @@ p {
 
 .MuiOutlinedInput-notchedOutline {
   border-color: var(--border) !important;
+}
+
+@media (max-width: 768px) {
+  #inputsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #inputs {
+    align-items: center;
+    width: 90%;
+  }
+
+  #inputs .MuiTextField-root {
+    width: 100%;
+  }
+
+  #menuContainer {
+    width: 90%;
+  }
+
+  #scenario-image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  #results-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .results-card {
+    width: 80%;
+  }
 }
