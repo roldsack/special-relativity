@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Raleway:wght@300;400;500&display=swap');
+
+@media (max-width: 768px) {
+  #inputsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #inputs {
+    align-items: center;
+    width: 90%;
+  }
+
+  #inputs .MuiTextField-root {
+    width: 100%;
+  }
+
+  #menuContainer {
+    width: 90%;
+  }
+
+  #scenario-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  #results-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .results-card {
+    width: 80%;
+  }
+}
+
+:root {
+  --bg: #000814;
+  --bg-card: #0a1628;
+  --bg-input: #0d1f3c;
+  --accent: #4fc3f7;
+  --accent-dim: #1a6a8a;
+  --text: #e0e0e0;
+  --text-dim: #8899aa;
+  --heading: #4fc3f7;
+  --border: rgba(79, 195, 247, 0.2);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'Raleway', sans-serif;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 4px;
+  margin: 40px 0 20px 0;
+  text-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin: 20px 0 10px 0;
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  color: var(--accent);
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+#intro-message {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#intro-message p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+#nameContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+#infoContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  text-align: left;
+}
+
+.infoSection {
+  margin-bottom: 40px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+#formula {
+  background: rgba(79, 195, 247, 0.05);
+  border: 1px solid var(--accent-dim);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+#formula h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent);
+  letter-spacing: 2px;
+}
+
+#inputsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+#menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#menuContainer h3 {
+  color: var(--accent);
+  letter-spacing: 3px;
+}
+
+#menuSelector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+#menuSelector span {
+  color: var(--accent);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+#scenario-image {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+#results-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.results-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 48px;
+  min-width: 200px;
+}
+
+.results-card h2 {
+  margin: 0;
+  color: var(--accent);
+}
+
+#fun-fact {
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 16px 24px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  font-style: italic;
+}
+
+#back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.MuiFilledInput-root {
+  background-color: #0d2a4a !important;
+  color: var(--text) !important;
+}
+
+.MuiFilledInput-root:hover {
+  background-color: #0d2a4a !important;
+}
+
+.MuiInputLabel-root {
+  color: var(--text-dim) !important;
+}
+
+.MuiFormHelperText-root {
+  color: var(--text-dim) !important;
+}
+
+.MuiOutlinedInput-root {
+  color: var(--text) !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: var(--border) !important;
+}
